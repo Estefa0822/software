@@ -27,7 +27,7 @@ public class Pintura extends Area {
      * Este método se encarga de adicionar los servicios al área
      */
     private void addServicios() {
-        Servicio pintura = new Servicio("pintura", 2000000, 60);
+        Servicio pintura = new Servicio("Pintura", 2000000, 60);
         servicios[0] = pintura;
     }
 

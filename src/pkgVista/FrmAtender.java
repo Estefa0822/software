@@ -5,6 +5,8 @@
  */
 package pkgVista;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import pkgControlador.Control;
@@ -369,6 +371,12 @@ public class FrmAtender extends javax.swing.JFrame {
                 } else {
                     fin = true;
                 }
+                try {
+                    Thread.sleep(700);
+                } catch (InterruptedException ex) {
+                    System.out.println("Error al esperar para atender");
+                }
+                
             } while (!fin);
         } else {
             fin = true;
